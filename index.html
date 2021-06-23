@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DevCard - Bootstrap 4 vCard &amp; Portfolio Template For Developers</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="DevCard Bootstrap 4 Template">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+	<!-- FontAwesome JS -->
+	<script defer src="https://kit.fontawesome.com/614436aae0.js" crossorigin="anonymous"></script>
+
+	<!-- Programming Languages Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+
+	<!-- Tiny Slider (Testimonials) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head>
+
+<body>
+
+	<header class="header text-center">
+		<div class="force-overflow">
+			<h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Fredrik Johansen</a></h1>
+
+			<nav class="navbar navbar-expand-lg navbar-dark">
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+					aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div id="navigation" class="collapse navbar-collapse flex-column">
+					<div class="profile-section pt-3 pt-lg-0">
+						<img class="profile-image mb-3 rounded-circle mx-auto"
+							src="https://avatars.githubusercontent.com/u/31306224?v=4" alt="image">
+
+						<div class="bio mb-3">Hello, my name is Fredrik Johansen and I'm a self taught software
+							developer. Welcome to my
+							personal website!</div>
+						<!--//bio-->
+						<ul class="social-list list-inline py-2 mx-auto">
+							<li class="list-inline-item"><a rel="noreferrer" href="https://twitter.com/fredrikj31" target="_blank"><i
+										class="fab fa-twitter fa-fw"></i></a></li>
+							<li class="list-inline-item"><a rel="noreferrer" href="https://linkedin.com/in/fredrik-johansen"
+									target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+							<li class="list-inline-item"><a rel="noreferrer" href="https://github.com/fredrikj31" target="_blank"><i
+										class="fab fa-github fa-fw"></i></a></li>
+							<li class="list-inline-item"><a rel="noreferrer" href="https://fredrikj31.hashnode.dev" target="_blank"><i
+										class="fas fa-feather fa-fw"></i></a></li>
+						</ul>
+						<!--//social-list-->
+						<hr>
+					</div>
+					<!--//profile-section-->
+
+					<ul class="navbar-nav flex-column text-left">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html"><i class="fas fa-user fa-fw mr-2"></i>About Me<span
+									class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="portfolio.html"><i
+									class="fas fa-laptop-code fa-fw mr-2"></i>Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="resume.html"><i class="fas fa-file-alt fa-fw mr-2"></i>Resume</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="blog.html"><i class="fas fa-feather fa-fw mr-2"></i>Blog</a>
+						</li>
+					</ul>
+
+
+					<div class="my-2">
+						<a class="btn btn-primary" rel="noreferrer" href="mailto:fredrik1206@gmail.com" target="_blank"><i
+								class="fas fa-paper-plane mr-2"></i>Contact Me</a>
+					</div>
+
+					<div class="dark-mode-toggle text-center w-100">
+						<hr class="mb-4">
+						<h4 class="toggle-name mb-3 "><i class="fas fa-adjust mr-1"></i>Dark Mode</h4>
+
+						<input class="toggle" id="darkmode" type="checkbox">
+						<label class="toggle-btn mx-auto mb-0" for="darkmode"></label>
+
+					</div>
+					<!--//dark-mode-toggle-->
+
+				</div>
+			</nav>
+		</div>
+		<!--//force-overflow-->
+	</header>
+
+	<div class="main-wrapper">
+
+		<div class="">
+			<section class="about-me-section p-3 p-lg-5 theme-bg-light">
+				<div class="container profile-teaser media flex-column flex-lg-row">
+
+					<div class="media-body">
+						<h2 class="name font-weight-bold mb-1">Fredrik Johansen</h2>
+						<div class="tagline mb-3">Self taught programmer & Student</div>
+						<div class="bio mb-4">I'm a self-taught software developer who specialises in mostly in backend,
+							but also a little less on frontend development.
+							I also write about different programming topic over on <a class="link-on-bg"
+								href="blog.html">my blog</a>.
+							Hop over to my portfolio <a class="link-on-bg" href="projects.html">portfolio</a> and <a
+								class="link-on-bg" href="resume.html">online resume</a> to see what I have built over
+							the years.
+						</div>
+						<!--//bio-->
+						<div class="mb-4">
+							<a class="btn btn-primary mr-2 mb-3" href="portfolio.html"><i
+									class="fas fa-arrow-alt-circle-right mr-2"></i><span
+									class="d-none d-md-inline">View</span> Portfolio</a>
+							<a class="btn btn-secondary mb-3" href="resume.html"><i
+									class="fas fa-file-alt mr-2"></i><span class="d-none d-md-inline">View</span>
+								Resume</a>
+						</div>
+					</div>
+					<!--//media-body-->
+					<video class="profile-image mb-3 mb-lg-0 ml-lg-5 mr-md-0" width="320" height="240" autoplay muted loop>
+						<source src="./assets/images/hello.webm" type="video/webm">
+							Your browser does not support the video tag.
+					</video>
+				</div>
+			</section>
+		</div>
+		<!--//about-me-section-->
+
+		<section class="overview-section p-3 p-lg-5">
+			<div class="container">
+				<h2 class="section-title font-weight-bold mb-3">What I do</h2>
+				<div class="section-intro mb-5">For more than 5 years, have I built different digital products, which
+					included a lot of different technologies. Below is a overview of the many different programming
+					languages and technologies I have built and used. Check out my <a href="resume.html">online
+						resume</a> and
+					<a href="portfolio.html">project portfolio</a> for an overview over my projects.
+				</div>
+				<div class="row">
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon">
+								<img src="./assets/images/languages/html.svg" alt="HTML Logo">
+								<img src="./assets/images/languages/css.svg" alt="HTML Logo">
+								<img src="./assets/images/languages/javascript.svg" alt="HTML Logo">
+								<img src="./assets/images/languages/bootstrap.svg" alt="HTML Logo">
+								<img src="./assets/images/languages/tailwind.svg" alt="HTML Logo">
+							</div>
+							<h3 class="item-title">Web Development</h3>
+							<div class="item-desc">Most of my projects has included some sort of frontend web development. It's because I have mainly focused on the web, and built with <a class="theme-link" rel="noreferrer" href="https://www.electronjs.org" target="_blank">Electron</a>.</div>
+						</div>
+						<!--//item-inner-->
+					</div>
+					<!--//item-->
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon">
+								<img src="./assets/images/languages/docker.svg" alt="Docker Logo">
+								<img src="./assets/images/languages/npm.svg" alt="NPM Logo">
+								<img src="./assets/images/languages/git.svg" alt="Git Logo">
+								<img src="./assets/images/languages/github.svg" alt="Github Logo">
+							</div>
+							<h3 class="item-title">Technologies</h3>
+							<div class="item-desc">I use Git and <a class="theme-link" rel="noreferrer" href="https://github.com/fredrikj31" target="_blank">Github</a> almost every day where I upload my different projects. I have a basic understanding of the NPM and Docker environment.</div>
+						</div>
+						<!--//item-inner-->
+					</div>
+					<!--//item-->
+
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon">
+								<img src="./assets/images/languages/firebase.svg" alt="Firebase Logo">
+								<img src="./assets/images/languages/mongodb.svg" alt="MongoDB Logo">
+								<img src="./assets/images/languages/mysql.svg" alt="MySQL Logo">
+							</div>
+							<h3 class="item-title">Databases</h3>
+							<div class="item-desc">I have used both SQL and NoSQL (Non SQL) databases in my projects, where I have a basic understanding of the SQL language and MySQL structuring.</div>
+						</div>
+						<!--//item-inner-->
+					</div>
+					<!--//item-->
+
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon">
+								<img src="./assets/images/languages/react.svg" alt="React Logo">
+								<img src="./assets/images/languages/flask.svg" alt="Flask Logo">
+							</div>
+							<h3 class="item-title">Web Libraries</h3>
+							<div class="item-desc">As said, have I focused on the web development, and here have I used a couple of different web libraries. Flask as a api backend and React as frontend.</div>
+						</div>
+						<!--//item-inner-->
+					</div>
+					<!--//item-->
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon">
+								<img src="./assets/images/languages/flutter.svg" alt="Flutter Logo">
+								<img src="./assets/images/languages/electron.svg" alt="Electron Logo">
+								<img src="./assets/images/languages/unity.svg" alt="Unity Logo">
+							</div>
+							<h3 class="item-title">Other Development</h3>
+							<div class="item-desc">I have tried to build for different platforms. I have created a couple of Flutter apps, as well as some Unity games, and desktop applications.</div>
+						</div>
+						<!--//item-inner-->
+					</div>
+					<!--//item-->
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon">
+								<img src="./assets/images/languages/php.svg" alt="PHP Logo"> 
+								<img src="./assets/images/languages/node.svg" alt="NodeJS Logo"> 
+								<img src="./assets/images/languages/csharp.svg" alt="CSharp Logo">
+								<img src="./assets/images/languages/java.svg" alt="Java Logo">
+								<img src="./assets/images/languages/python.svg" alt="Python Logo">
+							</div>
+							<h3 class="item-title">Backend Development</h3>
+							<div class="item-desc">I have used a lot of different backend languages. Node and PHP for web development. C# and Python for desktop, and Java for games.</div>
+						</div>
+						<!--//item-inner-->
+					</div>
+					<!--//item-->
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon">
+								<img src="./assets/images/languages/figma.svg" alt="Figma Logo">
+								<img src="./assets/images/languages/adobexd.svg" alt="Adobe XD Logo">
+							</div>
+							<h3 class="item-title">UI Tools</h3>
+							<div class="item-desc">For designing have I used 2 different softwares. Both Figma and Adobe Xd, who looks a lot like each other. I have used Xd's prototype feature for apps.</div>
+						</div>
+						<!--//item-inner-->
+					</div>
+					<!--//item-->
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon">
+								<img src="./assets/images/languages/appwrite.svg" alt="AppWrite Logo">
+								<img src="./assets/images/languages/firebase.svg" alt="Firebase Logo">
+								<img src="./assets/images/languages/heroku.svg" alt="Heroku Logo">
+							</div>
+							<h3 class="item-title">Server Management & Serverless</h3>
+							<div class="item-desc">I have used Firebase, which is a serverless product to all of my apps, and I'm hosting my Lectio API over on Heroku, and tried out App Write.</div>
+						</div>
+						<!--//item-inner-->
+					</div>
+					<!--//item-->
+				</div>
+				<!--//row-->
+			</div>
+			<!--//container-->
+		</section>
+
+		<div class="container">
+			<hr>
+		</div>
+
+		<section class="testimonials-section p-3 p-lg-5">
+			<div class="container">
+				<h2 class="section-title font-weight-bold mb-5">Testimonials (None right now)</h2>
+
+				<div class="testiomonial-carousel-container">
+					<div class="testimonial-carousel">
+						<div class="item">
+							<div class="item-inner">
+								<div class="quote-holder">
+									<blockquote class="quote-content">
+										Lorem ipsum dolor sit amet, consectetuer
+										adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+										natoque penatibus et magnis.
+									</blockquote>
+									<i class="fas fa-quote-left"></i>
+								</div>
+								<!--//quote-holder-->
+								<div class="source-holder">
+									<div class="source-profile">
+										<img src="https://www.homeandhelp.com/img/pages/32/a3a42e4e9d84f01cd08d0832682ab694.jpg"
+											alt="image" />
+									</div>
+									<div class="meta">
+										<div class="name">John Doe</div>
+										<div class="info">Project Manager, Google</div>
+									</div>
+								</div>
+							</div>
+							<!--//item-inner-->
+						</div>
+						<!--//item-->
+
+						<div class="item">
+							<div class="item-inner">
+								<div class="quote-holder">
+									<blockquote class="quote-content">
+										Lorem ipsum dolor sit amet, consectetuer
+										adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+										natoque penatibus et magnis.
+									</blockquote>
+									<i class="fas fa-quote-left"></i>
+								</div>
+								<!--//quote-holder-->
+								<div class="source-holder">
+									<div class="source-profile">
+										<img src="https://www.homeandhelp.com/img/pages/32/a3a42e4e9d84f01cd08d0832682ab694.jpg"
+											alt="image" />
+									</div>
+									<div class="meta">
+										<div class="name">John Doe</div>
+										<div class="info">Project Manager, Uber</div>
+									</div>
+								</div>
+							</div>
+							<!--//item-inner-->
+						</div>
+						<!--//item-->
+
+						<div class="item">
+							<div class="item-inner">
+								<div class="quote-holder">
+									<blockquote class="quote-content">
+										Lorem ipsum dolor sit amet, consectetuer
+										adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+										natoque penatibus et magnis.
+									</blockquote>
+									<i class="fas fa-quote-left"></i>
+								</div>
+								<!--//quote-holder-->
+								<div class="source-holder">
+									<div class="source-profile">
+										<img src="https://www.homeandhelp.com/img/pages/32/a3a42e4e9d84f01cd08d0832682ab694.jpg"
+											alt="image" />
+									</div>
+									<div class="meta">
+										<div class="name">John Doe</div>
+										<div class="info">Product Manager, Amazon</div>
+									</div>
+								</div>
+							</div>
+							<!--//item-inner-->
+						</div>
+						<!--//item-->
+					</div>
+					<!--//testimonial-carousel-->
+				</div>
+				<!--//testimonial-carousel-container-->
+			</div>
+			<!--//container-->
+		</section>
+		<!--//testimonials-section-->
+
+		<div class="container">
+			<hr>
+		</div>
+
+		<section class="featured-section p-3 p-lg-5">
+			<div class="container">
+				<h2 class="section-title font-weight-bold mb-5">Featured Projects</h2>
+				<div class="row">
+					<div class="col-md-6 mb-5">
+						<div class="card project-card">
+							<div class="row no-gutters">
+								<div class="col-lg-4 card-img-holder">
+									<img src="assets/images/project/project-1.jpg" class="card-img" alt="image">
+								</div>
+								<div class="col-lg-8">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link">Project
+												Heading</a></h5>
+										<p class="card-text">Project intro lorem ipsum dolor sit amet, consectetuer
+											adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient
+											montes.</p>
+										<p class="card-text"><small class="text-muted">Client: Google</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="project.html">
+										<i class="fas fa-eye mr-2"></i>View Case Study
+									</a>
+								</div>
+							</div>
+							<!--//link-mask-->
+						</div>
+						<!--//card-->
+					</div>
+					<!--//col-->
+					<div class="col-md-6 mb-5">
+						<div class="card project-card">
+							<div class="row no-gutters">
+								<div class="col-lg-4 card-img-holder">
+									<img src="assets/images/project/project-2.jpg" class="card-img" alt="image">
+								</div>
+								<div class="col-lg-8">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link">Project
+												Heading</a></h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+											ridiculus mus. </p>
+										<p class="card-text"><small class="text-muted">Client: Dropbox</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="project.html">
+										<i class="fas fa-eye mr-2"></i>View Case Study
+									</a>
+								</div>
+							</div>
+							<!--//link-mask-->
+						</div>
+						<!--//card-->
+					</div>
+					<!--//col-->
+					<div class="col-md-6 mb-5">
+						<div class="card project-card">
+							<div class="row no-gutters">
+								<div class="col-lg-4 card-img-holder">
+									<img src="assets/images/project/project-3.jpg" class="card-img" alt="image">
+								</div>
+								<div class="col-lg-8">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link">Project
+												Heading</a></h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+											ridiculus mus. </p>
+										<p class="card-text"><small class="text-muted">Client: Google</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="project.html">
+										<i class="fas fa-eye mr-2"></i>View Case Study
+									</a>
+								</div>
+							</div>
+							<!--//link-mask-->
+						</div>
+						<!--//card-->
+					</div>
+					<!--//col-->
+					<div class="col-md-6 mb-5">
+						<div class="card project-card">
+							<div class="row no-gutters">
+								<div class="col-lg-4 card-img-holder">
+									<img src="assets/images/project/project-4.jpg" class="card-img" alt="image">
+								</div>
+								<div class="col-lg-8">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link">Project
+												Heading</a></h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+											ridiculus mus. </p>
+										<p class="card-text"><small class="text-muted">Client: Uber</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="project.html">
+										<i class="fas fa-eye mr-2"></i>View Case Study
+									</a>
+								</div>
+							</div>
+							<!--//link-mask-->
+						</div>
+						<!--//card-->
+					</div>
+					<!--//col-->
+				</div>
+				<!--//row-->
+				<div class="text-center py-3"><a href="portfolio.html" class="btn btn-primary"><i
+							class="fas fa-arrow-alt-circle-right mr-2"></i>View Portfolio</a></div>
+
+			</div>
+			<!--//container-->
+		</section>
+		<!--//featured-section-->
+
+		<div class="container">
+			<hr>
+		</div>
+
+		<section class="latest-blog-section p-3 p-lg-5">
+			<div class="container">
+				<h2 class="section-title font-weight-bold mb-5">Latest Blog Posts</h2>
+				<div class="row" id="latestBlogPosts">
+				</div>
+				<!--//row-->
+				<div class="text-center py-3"><a href="blog.html" class="btn btn-primary"><i
+							class="fas fa-arrow-alt-circle-right mr-2"></i>View Blog</a></div>
+			</div>
+			<!--//container-->
+
+		</section>
+		<!--//latest-blog-section-->
+
+		<footer class="footer text-center py-4">
+			<small class="copyright">Copyright &copy; Fredrik Johansen 2021
+			</small>
+		</footer>
+
+	</div>
+	<!--//main-wrapper-->
+
+	<!-- Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+	<script src="assets/js/testimonials.js"></script>
+
+	<!-- Dark Mode -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+	<script src="./assets/js/dark-mode.js"></script>
+
+	<!-- Blog Posts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+	<!-- * API CALLs -->
+	<script src="./assets/js/new-blog-posts.js"></script>
+
+</body>
+
+</html>
