@@ -9444,7 +9444,6 @@ hr {
 	background: #fafafa;
 	border: 1px solid rgba(0, 0, 0, 0.025);
 	position: relative;
-	height: 100%;
 }
 .project-card:hover .link-mask {
 	visibility: visible;
@@ -9463,10 +9462,15 @@ hr {
 	font-size: 0.875rem;
 }
 .project-card .card-img-holder {
-	max-height: 200px;
 	overflow: hidden;
 	vertical-align: middle;
 }
+
+.project-card .card-img-holder img {
+	height: 100%;
+	width: 100%;
+}
+
 .project-card .link-mask {
 	position: absolute;
 	left: 0;
