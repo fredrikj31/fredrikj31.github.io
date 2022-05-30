@@ -33,7 +33,7 @@
 
 	<header class="header text-center">
 		<div class="force-overflow">
-			<h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Fredrik Johansen</a></h1>
+			<h1 class="blog-name pt-lg-4 mb-0"><a href="index.html" id="name">Fredrik Johansen</a></h1>
 
 			<nav class="navbar navbar-expand-lg navbar-dark">
 
@@ -47,19 +47,9 @@
 						<img class="profile-image mb-3 rounded-circle mx-auto"
 							src="https://avatars.githubusercontent.com/u/31306224?v=4" alt="image">
 
-						<div class="bio mb-3">Hello, my name is Fredrik Johansen and I'm a self taught software
-							developer. Welcome to my
-							personal website!</div>
+						<div class="bio mb-3" id="description"></div>
 						<!--//bio-->
-						<ul class="social-list list-inline py-2 mx-auto">
-							<li class="list-inline-item"><a rel="noreferrer" href="https://twitter.com/fredrikj31" target="_blank"><i
-										class="fab fa-twitter fa-fw"></i></a></li>
-							<li class="list-inline-item"><a rel="noreferrer" href="https://linkedin.com/in/fredrik-johansen"
-									target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-							<li class="list-inline-item"><a rel="noreferrer" href="https://github.com/fredrikj31" target="_blank"><i
-										class="fab fa-github fa-fw"></i></a></li>
-							<li class="list-inline-item"><a rel="noreferrer" href="https://fredrikj31.hashnode.dev" target="_blank"><i
-										class="fas fa-feather fa-fw"></i></a></li>
+						<ul class="social-list list-inline py-2 mx-auto" id="socials">
 						</ul>
 						<!--//social-list-->
 						<hr>
@@ -85,8 +75,8 @@
 
 
 					<div class="my-2">
-						<a class="btn btn-primary" rel="noreferrer" href="mailto:fredrik1206@gmail.com" target="_blank"><i
-								class="fas fa-paper-plane mr-2"></i>Contact Me</a>
+						<a class="btn btn-primary" rel="noreferrer" href="mailto:fredrik1206@gmail.com"
+							target="_blank"><i class="fas fa-paper-plane mr-2"></i>Contact Me</a>
 					</div>
 
 					<div class="dark-mode-toggle text-center w-100">
@@ -133,9 +123,10 @@
 						</div>
 					</div>
 					<!--//media-body-->
-					<video class="profile-image mb-3 mb-lg-0 ml-lg-5 mr-md-0" width="320" height="240" autoplay muted loop>
+					<video class="profile-image mb-3 mb-lg-0 ml-lg-5 mr-md-0" width="320" height="240" autoplay muted
+						loop>
 						<source src="./assets/images/hello.webm" type="video/webm">
-							Your browser does not support the video tag.
+						Your browser does not support the video tag.
 					</video>
 				</div>
 			</section>
@@ -162,7 +153,10 @@
 								<img src="./assets/images/languages/tailwind.svg" alt="HTML Logo">
 							</div>
 							<h3 class="item-title">Web Development</h3>
-							<div class="item-desc">Most of my projects has included some sort of frontend web development. It's because I have mainly focused on the web, and built with <a class="theme-link" rel="noreferrer" href="https://www.electronjs.org" target="_blank">Electron</a>.</div>
+							<div class="item-desc">Most of my projects has included some sort of frontend web
+								development. It's because I have mainly focused on the web, and built with <a
+									class="theme-link" rel="noreferrer" href="https://www.electronjs.org"
+									target="_blank">Electron</a>.</div>
 						</div>
 						<!--//item-inner-->
 					</div>
@@ -176,7 +170,10 @@
 								<img src="./assets/images/languages/github.svg" alt="Github Logo">
 							</div>
 							<h3 class="item-title">Technologies</h3>
-							<div class="item-desc">I use Git and <a class="theme-link" rel="noreferrer" href="https://github.com/fredrikj31" target="_blank">Github</a> almost every day where I upload my different projects. I have a basic understanding of the NPM and Docker environment.</div>
+							<div class="item-desc">I use Git and <a class="theme-link" rel="noreferrer"
+									href="https://github.com/fredrikj31" target="_blank">Github</a> almost every day
+								where I upload my different projects. I have a basic understanding of the NPM and Docker
+								environment.</div>
 						</div>
 						<!--//item-inner-->
 					</div>
@@ -190,7 +187,8 @@
 								<img src="./assets/images/languages/mysql.svg" alt="MySQL Logo">
 							</div>
 							<h3 class="item-title">Databases</h3>
-							<div class="item-desc">I have used both SQL and NoSQL (Non SQL) databases in my projects, where I have a basic understanding of the SQL language and MySQL structuring.</div>
+							<div class="item-desc">I have used both SQL and NoSQL (Non SQL) databases in my projects,
+								where I have a basic understanding of the SQL language and MySQL structuring.</div>
 						</div>
 						<!--//item-inner-->
 					</div>
@@ -203,7 +201,8 @@
 								<img src="./assets/images/languages/flask.svg" alt="Flask Logo">
 							</div>
 							<h3 class="item-title">Web Libraries</h3>
-							<div class="item-desc">As said, have I focused on the web development, and here have I used a couple of different web libraries. Flask as a api backend and React as frontend.</div>
+							<div class="item-desc">As said, have I focused on the web development, and here have I used
+								a couple of different web libraries. Flask as a api backend and React as frontend.</div>
 						</div>
 						<!--//item-inner-->
 					</div>
@@ -216,7 +215,8 @@
 								<img src="./assets/images/languages/unity.svg" alt="Unity Logo">
 							</div>
 							<h3 class="item-title">Other Development</h3>
-							<div class="item-desc">I have tried to build for different platforms. I have created a couple of Flutter apps, as well as some Unity games, and desktop applications.</div>
+							<div class="item-desc">I have tried to build for different platforms. I have created a
+								couple of Flutter apps, as well as some Unity games, and desktop applications.</div>
 						</div>
 						<!--//item-inner-->
 					</div>
@@ -224,14 +224,15 @@
 					<div class="item col-6 col-lg-3">
 						<div class="item-inner">
 							<div class="item-icon">
-								<img src="./assets/images/languages/php.svg" alt="PHP Logo"> 
-								<img src="./assets/images/languages/node.svg" alt="NodeJS Logo"> 
+								<img src="./assets/images/languages/php.svg" alt="PHP Logo">
+								<img src="./assets/images/languages/node.svg" alt="NodeJS Logo">
 								<img src="./assets/images/languages/csharp.svg" alt="CSharp Logo">
 								<img src="./assets/images/languages/java.svg" alt="Java Logo">
 								<img src="./assets/images/languages/python.svg" alt="Python Logo">
 							</div>
 							<h3 class="item-title">Backend Development</h3>
-							<div class="item-desc">I have used a lot of different backend languages. Node and PHP for web development. C# and Python for desktop, and Java for games.</div>
+							<div class="item-desc">I have used a lot of different backend languages. Node and PHP for
+								web development. C# and Python for desktop, and Java for games.</div>
 						</div>
 						<!--//item-inner-->
 					</div>
@@ -243,7 +244,8 @@
 								<img src="./assets/images/languages/adobexd.svg" alt="Adobe XD Logo">
 							</div>
 							<h3 class="item-title">UI Tools</h3>
-							<div class="item-desc">For designing have I used 2 different softwares. Both Figma and Adobe Xd, who looks a lot like each other. I have used Xd's prototype feature for apps.</div>
+							<div class="item-desc">For designing have I used 2 different softwares. Both Figma and Adobe
+								Xd, who looks a lot like each other. I have used Xd's prototype feature for apps.</div>
 						</div>
 						<!--//item-inner-->
 					</div>
@@ -256,7 +258,8 @@
 								<img src="./assets/images/languages/heroku.svg" alt="Heroku Logo">
 							</div>
 							<h3 class="item-title">Server Management & Serverless</h3>
-							<div class="item-desc">I have used Firebase, which is a serverless product to all of my apps, and I'm hosting my Lectio API over on Heroku, and tried out App Write.</div>
+							<div class="item-desc">I have used Firebase, which is a serverless product to all of my
+								apps, and I'm hosting my Lectio API over on Heroku, and tried out App Write.</div>
 						</div>
 						<!--//item-inner-->
 					</div>
@@ -375,12 +378,11 @@
 						<div class="card project-card">
 							<div class="row no-gutters">
 								<div class="col-lg-4 card-img-holder">
-									<img src="assets/images/project/project-1.jpg" class="card-img" alt="image">
+									<img src="assets/images/projects/hco-project/cover-image.jpg" class="card-img" alt="image">
 								</div>
 								<div class="col-lg-8">
 									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link">Project
-												Heading</a></h5>
+										<h5 class="card-title"><a href="project.html" class="theme-link">HighSchool Subject & Elective Picker</a></h5>
 										<p class="card-text">Project intro lorem ipsum dolor sit amet, consectetuer
 											adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient
 											montes.</p>
@@ -396,7 +398,6 @@
 									</a>
 								</div>
 							</div>
-							<!--//link-mask-->
 						</div>
 						<!--//card-->
 					</div>
@@ -531,7 +532,7 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EHV05HFGXV"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 
 		gtag('config', 'G-EHV05HFGXV');
@@ -541,6 +542,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<!-- Sidebar Displayer -->
+	<script src="./assets/js/navbar-displayer.js"></script>
+	<script>
+		const sidebarDisplayer = new SidebarDisplayer("index.html");
+	</script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 	<script src="assets/js/testimonials.js"></script>

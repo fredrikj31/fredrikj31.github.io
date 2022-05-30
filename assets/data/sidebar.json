@@ -1,0 +1,60 @@
+{
+	"name": "Fredrik Johansen",
+	"description": "Hello, my name is Fredrik Johansen and I'm a self taught software developer. Welcome to my personal website!",
+	"socials": [
+		{
+			"icon": [
+				"fab",
+				"fa-twitter",
+				"fa-fw"
+			],
+			"link": "https://twitter.com/fredrikj31"
+		},
+		{
+			"icon": [
+				"fab",
+				"fa-linkedin",
+				"fa-fw"
+			],
+			"link": "https://linkedin.com/in/fredrik-johansen"
+		},
+		{
+			"icon": [
+				"fab",
+				"fa-github",
+				"fa-fw"
+			],
+			"link": "https://github.com/fredrikj31"
+		},
+		{
+			"icon": [
+				"fas",
+				"fa-feather",
+				"fa-fw"
+			],
+			"link": "https://fredrikj31.hashnode.dev"
+		}
+	],
+	"pages": [
+		{
+			"icon": "fa-user",
+			"link": "index.html",
+			"text": "About Me"
+		},
+		{
+			"icon": "fa-laptop-code",
+			"link": "portfolio.html",
+			"text": "Portfolio"
+		},
+		{
+			"icon": "fa-paper",
+			"link": "resume.html",
+			"text": "Resume"
+		},
+		{
+			"icon": "fa-feather",
+			"link": "blog.html",
+			"text": "Blog"
+		}
+	]
+}
