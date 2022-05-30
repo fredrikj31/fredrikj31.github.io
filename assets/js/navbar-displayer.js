@@ -100,10 +100,42 @@ class SidebarDisplayer {
 				<a class="nav-link" href="index.html">
 					<i class="fas fa-user fa-fw mr-2"></i>
 					About Me
-					<span class="sr-only">(current)</span>
 				</a>
 			</li>
 		*/
+
+		const pagesList = document.getElementById("pages");
+
+		pages.forEach(element => {
+			// Creating the li element
+			const liElem = document.createElement("li");
+			liElem.classList.add("nav-item");
+			if (activePage === element["link"]) {
+				liElem.classList.add("active");
+			}
+
+			// Creating the a element
+			const aElem = document.createElement("a");
+			aElem.classList.add("nav-link");
+			aElem.href = element["link"];
+
+			// Createing the i/icon element
+			const iElem = document.createElement("i");
+			iElem.classList.add("mr-2");
+			element["icon"].forEach(className => {
+				iElem.classList.add(className);
+			});
+
+			// Creating their relation
+			aElem.appendChild(iElem);
+			liElem.appendChild(aElem);
+
+			// Setting the link display name at last
+			aElem.innerHTML = aElem.innerHTML + element["text"];
+
+			// Adding the element to the list of socials
+			pagesList.appendChild(liElem);
+		});
 	}
 
 }

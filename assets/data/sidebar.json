@@ -37,22 +37,38 @@
 	],
 	"pages": [
 		{
-			"icon": "fa-user",
+			"icon": [
+				"fas",
+				"fa-user",
+				"fa-fw"
+			],
 			"link": "index.html",
 			"text": "About Me"
 		},
 		{
-			"icon": "fa-laptop-code",
+			"icon": [
+				"fas",
+				"fa-laptop-code",
+				"fa-fw"
+			],
 			"link": "portfolio.html",
 			"text": "Portfolio"
 		},
 		{
-			"icon": "fa-paper",
+			"icon": [
+				"fas",
+				"fa-file-alt",
+				"fa-fw"
+			],
 			"link": "resume.html",
 			"text": "Resume"
 		},
 		{
-			"icon": "fa-feather",
+			"icon": [
+				"fas",
+				"fa-feather",
+				"fa-fw"
+			],
 			"link": "blog.html",
 			"text": "Blog"
 		}
