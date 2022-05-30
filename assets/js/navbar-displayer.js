@@ -15,7 +15,7 @@ class SidebarDisplayer {
 		}
 
 		// Calling the initialize function
-		this.displaySidebar();
+		this.displaySidebar(page);
 	}
 
 	/**
@@ -29,7 +29,7 @@ class SidebarDisplayer {
 			});
 	}
 
-	displaySidebar = async () => {
+	displaySidebar = async (activePage) => {
 		let data = null;
 		data = await this.fetchData();
 
@@ -43,6 +43,9 @@ class SidebarDisplayer {
 
 		// Setting the socials
 		this.addSocials(data["socials"]);
+
+		// Setting the pages
+		this.addPages(data["pages"], activePage);
 	}
 
 	/**
@@ -83,6 +86,24 @@ class SidebarDisplayer {
 			// Adding the element to the list of socials
 			socialsList.appendChild(liElem);
 		});
+	}
+
+	/**
+	 * 
+	 * @param {array} pages A list of pages from the json file 
+	 * @param {string} activePage Name of the active page
+	 */
+	addPages = (pages, activePage) => {
+		/*
+			PAGE ELEMENT
+			<li class="nav-item active">
+				<a class="nav-link" href="index.html">
+					<i class="fas fa-user fa-fw mr-2"></i>
+					About Me
+					<span class="sr-only">(current)</span>
+				</a>
+			</li>
+		*/
 	}
 
 }
