@@ -1,0 +1,14 @@
+[
+	{
+		"name": "John Doe",
+		"picture": "https://google.com",
+		"role": "Director, Google",
+		"text": "Lorem Ipsum..."
+	},
+	{
+		"name": "John Doe",
+		"picture": "https://google.com",
+		"role": "Director, Google",
+		"text": "Lorem Ipsum..."
+	}
+]
