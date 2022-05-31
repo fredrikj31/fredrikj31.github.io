@@ -25,5 +25,4 @@ const slider = tns({
     mouseDrag: true,
     controls: false,
     speed: 800,
-
 });
