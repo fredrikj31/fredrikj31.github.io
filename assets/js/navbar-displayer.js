@@ -33,7 +33,7 @@ class SidebarDisplayer {
 		let data = null;
 		data = await this.fetchData();
 
-		console.log(data);
+		//console.log(data);
 
 		// Setting the name
 		document.getElementById("name").innerText = data["name"];
