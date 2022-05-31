@@ -29,7 +29,7 @@
     
     <header class="header text-center">
 		<div class="force-overflow">
-			<h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Fredrik Johansen</a></h1>
+			<h1 class="blog-name pt-lg-4 mb-0"><a href="index.html" id="name"></a></h1>
 
 			<nav class="navbar navbar-expand-lg navbar-dark">
 
@@ -43,35 +43,15 @@
 						<img class="profile-image mb-3 rounded-circle mx-auto" src="https://avatars.githubusercontent.com/u/31306224?v=4"
 							alt="image">
 
-						<div class="bio mb-3">Hello, my name is Fredrik Johansen and I'm a self taught software developer. Welcome to my
-							personal website!</div>
+						<div class="bio mb-3" id="description"></div>
 						<!--//bio-->
-						<ul class="social-list list-inline py-2 mx-auto">
-							<li class="list-inline-item"><a href="https://twitter.com/fredrikj31" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="https://linkedin.com/in/fredrik-johansen" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="https://github.com/fredrikj31" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="https://fredrikj31.hashnode.dev" target="_blank"><i class="fas fa-feather fa-fw"></i></a></li>
-						</ul>
+						<ul class="social-list list-inline py-2 mx-auto" id="socials"></ul>
 						<!--//social-list-->
 						<hr>
 					</div>
 					<!--//profile-section-->
 
-					<ul class="navbar-nav flex-column text-left">
-						<li class="nav-item">
-							<a class="nav-link" href="index.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="portfolio.html"><i
-									class="fas fa-laptop-code fa-fw mr-2"></i>Portfolio</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="resume.html"><i class="fas fa-file-alt fa-fw mr-2"></i>Resume</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="blog.html"><i class="fas fa-feather fa-fw mr-2"></i>Blog<span class="sr-only">(current)</span></a>
-						</li>
-					</ul>
+					<ul class="navbar-nav flex-column text-left" id="pages"></ul>
 
 
 					<div class="my-2">
@@ -129,6 +109,12 @@
 		gtag('config', 'G-EHV05HFGXV');
 	</script>
 
+	<!-- Sidebar Displayer -->
+	<script src="./assets/js/navbar-displayer.js"></script>
+	<script>
+		const sidebarDisplayer = new SidebarDisplayer("blog.html");
+	</script>
+
     <!-- Javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -140,7 +126,7 @@
     
 	<!-- Blog Posts -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-	<!-- * API CALLS -->
+	<!-- API CALLS -->
 	<script src="./assets/js/all-blog-posts.js"></script>
 
 </body>
