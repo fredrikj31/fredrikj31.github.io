@@ -275,7 +275,7 @@
 				<h2 class="section-title font-weight-bold mb-5">Testimonials (None right now)</h2>
 
 				<div class="testiomonial-carousel-container">
-					<div class="testimonial-carousel">
+					<div class="testimonial-carousel" id="testimonials">
 						<div class="item">
 							<div class="item-inner">
 								<div class="quote-holder">
@@ -536,7 +536,11 @@
 	</script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-	<script src="assets/js/testimonials.js"></script>
+	<script defer src="./assets/js/testimonials.js"></script>
+	<script src="./assets/js/testimonials-displayer.js"></script>
+	<script>
+		const testimonialsDisplayer = new TestimonialsDisplayer();
+	</script>
 
 	<!-- Dark Mode -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
