@@ -1,8 +1,12 @@
 class TestimonialsDisplayer {
+
+	isSubfolder = null;
+
 	/**
 	 * @description This function runs the rendering proces of the testimonials
 	 */
-	constructor() {
+	constructor(isSubfolder) {
+		this.isSubfolder = isSubfolder;
 		// Calling the initialize function
 		this.displayTestimonials();
 	}
@@ -11,11 +15,19 @@ class TestimonialsDisplayer {
 	 * @returns Returns the data of the red file
 	 */
 	fetchData = async () => {
-		return await fetch("./assets/data/testimonials.json")
+		if (this.isSubfolder === true) {
+			return await fetch("../assets/data/testimonials.json")
 			.then(response => response.json())
 			.then(data => {
 				return data;
-			});
+			});	
+		} else {
+			return await fetch("./assets/data/testimonials.json")
+				.then(response => response.json())
+				.then(data => {
+					return data;
+				});
+		}
 	}
 
 	displayTestimonials = async () => {

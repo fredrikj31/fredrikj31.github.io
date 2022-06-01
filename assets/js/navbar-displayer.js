@@ -3,16 +3,19 @@
 class SidebarDisplayer {
 
 	data = null;
+	isSubFolder = null;
 
 	/**
 	 * @description This function runs the rendering proces of the sidebar
 	 * @param {String} page The current page the navbar is rendered on
 	 */
-	constructor(page) {
+	constructor(page, isSubFolder) {
 		if (page === null || page === undefined || page === "") {
 			console.error("No page was specified! \nPlease enter a page file, corresponding to the active page.");
 			return;
 		}
+
+		this.isSubFolder = isSubFolder;
 
 		// Calling the initialize function
 		this.displaySidebar(page);
@@ -22,11 +25,21 @@ class SidebarDisplayer {
 	 * @returns Returns the data of the red file
 	 */
 	fetchData = async () =>  {
-		return await fetch("./assets/data/sidebar.json")
+
+		if (this.isSubFolder === true) {
+			return await fetch("../assets/data/sidebar.json")
 			.then(response => response.json())
 			.then(data => {
 				return data;
 			});
+		} else {
+			return await fetch("./assets/data/sidebar.json")
+				.then(response => response.json())
+				.then(data => {
+					return data;
+				});
+		}
+
 	}
 
 	displaySidebar = async (activePage) => {
@@ -100,26 +113,14 @@ class SidebarDisplayer {
 			const tempElem = document.createElement("div");
 			tempElem.classList.add("page");
 
-			if (activePage === element["link"]) {
-				tempElem.innerHTML = `
-					<li class="nav-item active">
-						<a class="nav-link" href="${element["link"]}">
-							<i class="${element["icon"]} mr-2"></i>
-							${element["text"]}
-						</a>
-					</li>
-				`;
-			} else {
-				tempElem.innerHTML = `
-					<li class="nav-item">
-						<a class="nav-link" href="${element["link"]}">
-							<i class="${element["icon"]} mr-2"></i>
-							${element["text"]}
-						</a>
-					</li>
-				`;
-			}
-
+			tempElem.innerHTML = `
+				<li class="nav-item ${element["link"] === activePage ? "active" : ""}">
+					<a class="nav-link" href="${(this.isSubFolder) ? "../" : "./"}${element["link"]}">
+						<i class="${element["icon"]} mr-2"></i>
+						${element["text"]}
+					</a>
+				</li>
+			`;
 
 			pagesList.appendChild(tempElem);
 		});

@@ -439,8 +439,7 @@
 		<!--//latest-blog-section-->
 
 		<footer class="footer text-center py-4">
-			<small class="copyright">Copyright &copy; Fredrik Johansen 2021
-			</small>
+			<small class="copyright" id="copyright"></small>
 		</footer>
 
 	</div>
@@ -461,6 +460,13 @@
 	<script src="./assets/js/testimonials-displayer.js"></script>
 	<script>
 		const testimonialsDisplayer = new TestimonialsDisplayer();
+	</script>
+
+	<!-- Main Script -->
+	<script src="./assets/js/main.js"></script>
+	<script>
+		const main = new Main();
+		main.setCopyright();
 	</script>
 
 	<!-- Dark Mode -->
