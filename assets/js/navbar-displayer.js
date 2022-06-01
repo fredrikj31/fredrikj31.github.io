@@ -64,27 +64,17 @@ class SidebarDisplayer {
 		const socialsList = document.getElementById("socials");
 
 		socials.forEach(element => {
-			// Creating the li element
-			const liElem = document.createElement("li");
-			liElem.classList.add("list-inline-item");
+			const tempElem = document.createElement("li");
+			tempElem.classList.add("list-inline-item");
 
-			// Creating the a element
-			const aElem = document.createElement("a");
-			aElem.href = element["link"];
-			aElem.target = "_blank";
-
-			// Createing the i/icon element
-			const iElem = document.createElement("i");
-			element["icon"].forEach(className => {
-				iElem.classList.add(className);
-			});
-
-			// Creating their relation
-			aElem.appendChild(iElem);
-			liElem.appendChild(aElem);
+			tempElem.innerHTML = `
+				<a href="${element["link"]}" target="_blank">
+					<i class="${element["icon"]}"></i>
+				</a>
+			`;
 
 			// Adding the element to the list of socials
-			socialsList.appendChild(liElem);
+			socialsList.appendChild(tempElem);
 		});
 	}
 
@@ -107,34 +97,31 @@ class SidebarDisplayer {
 		const pagesList = document.getElementById("pages");
 
 		pages.forEach(element => {
-			// Creating the li element
-			const liElem = document.createElement("li");
-			liElem.classList.add("nav-item");
+			const tempElem = document.createElement("div");
+			tempElem.classList.add("page");
+
 			if (activePage === element["link"]) {
-				liElem.classList.add("active");
+				tempElem.innerHTML = `
+					<li class="nav-item active">
+						<a class="nav-link" href="${element["link"]}">
+							<i class="${element["icon"]} mr-2"></i>
+							${element["text"]}
+						</a>
+					</li>
+				`;
+			} else {
+				tempElem.innerHTML = `
+					<li class="nav-item">
+						<a class="nav-link" href="${element["link"]}">
+							<i class="${element["icon"]} mr-2"></i>
+							${element["text"]}
+						</a>
+					</li>
+				`;
 			}
 
-			// Creating the a element
-			const aElem = document.createElement("a");
-			aElem.classList.add("nav-link");
-			aElem.href = element["link"];
 
-			// Createing the i/icon element
-			const iElem = document.createElement("i");
-			iElem.classList.add("mr-2");
-			element["icon"].forEach(className => {
-				iElem.classList.add(className);
-			});
-
-			// Creating their relation
-			aElem.appendChild(iElem);
-			liElem.appendChild(aElem);
-
-			// Setting the link display name at last
-			aElem.innerHTML = aElem.innerHTML + element["text"];
-
-			// Adding the element to the list of socials
-			pagesList.appendChild(liElem);
+			pagesList.appendChild(tempElem);
 		});
 	}
 
