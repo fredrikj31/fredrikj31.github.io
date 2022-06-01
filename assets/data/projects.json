@@ -1,9 +1,9 @@
 [
 	{
-		"title": "Lorem Ipsum Project",
-		"description": "Long description here... A lot of text here, where it all can fit in",
-		"footer": "Client: Google",
-		"image": "./assets/images/project/project-1.jpg",
+		"title": "HighSchool Subjects & Elective Picker",
+		"description": "A web application which allows prospective- and already students to get a fast and nice overview of the subjects and electives.",
+		"footer": "Client: H.C. Ørsted Gymnasiet",
+		"image": "./assets/images/projects/hco-project/cover-image.jpg",
 		"link": "./projects/HighSchool-Subjects-And-Electives-Picker.html"
 	}
 ]

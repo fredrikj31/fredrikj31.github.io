@@ -239,7 +239,7 @@
 	    </section><!--//promo-section-->
 	    
 	    <footer class="footer text-center py-4">
-			<small class="copyright">Copyright &copy; Fredrik Johansen <script>printCurrentYear()</script></small>
+			<small class="copyright" id="copyright">Copyright &copy; Fredrik Johansen <script>document.write("Hello World");</script></small>
 		</footer>
     
     </div><!--//main-wrapper-->
@@ -249,14 +249,16 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-	<script src="assets/js/testimonials.js"></script>
-
 	<!-- Dark Mode -->
-	<script src="assets/plugins/js-cookie.min.js"></script>
-	<script src="assets/js/dark-mode.js"></script>   
-    
-
+	<script src="../assets/plugins/js-cookie.min.js"></script>
+	<script src="../assets/js/dark-mode.js"></script>  
+	
+	<!-- Main Scripts -->
+	<script src="../assets/js/main.js"></script>
+	<script>
+		const main = new Main();
+		main.setCopyright();
+	</script>
 </body>
 </html> 
 
