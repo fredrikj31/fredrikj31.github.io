@@ -50,62 +50,31 @@ class TestimonialsDisplayer {
 		const testimonialsElem = document.getElementById("testimonials");
 
 		data.forEach(element => {
-			const itemElem = document.createElement("div");
-			itemElem.classList.add("item");
-	
-			const itemInnerElem = document.createElement("div");
-			itemInnerElem.classList.add("item-inner");
-	
-			const quoteHolderElem = document.createElement("div");
-			quoteHolderElem.classList.add("quote-holder");
-	
-			const quoteContentElem = document.createElement("blockquote");
-			quoteContentElem.classList.add("quote-content");
-			quoteContentElem.innerText = element["text"];
+			const tempElem = document.createElement("div");
+			tempElem.classList.add("testimonial");
 
-			const quoteIconElem = document.createElement("i");
-			quoteIconElem.classList.add("fas", "fa-quote-left");
-
-			const sourceHolderElem = document.createElement("div");
-			sourceHolderElem.classList.add("source-holder");
-
-			const sourceProfileElem = document.createElement("div");
-			sourceProfileElem.classList.add("source-profile");
-
-			const imageElem = document.createElement("img");
-			imageElem.src = element["picture"];
-			imageElem.alt = `Profile Picture of ${element["name"]}`;
-
-			const metaElem = document.createElement("div");
-			metaElem.classList.add("meta");
-
-			const nameElem = document.createElement("div");
-			nameElem.classList.add("name");
-			nameElem.innerText = element["name"];
-
-			const roleElem = document.createElement("div");
-			roleElem.classList.add("info");
-			roleElem.innerText = element["role"];
-
-			// Adding the relations
-			metaElem.appendChild(nameElem);
-			metaElem.appendChild(roleElem);
-
-			sourceProfileElem.appendChild(imageElem);
-			
-			sourceHolderElem.appendChild(sourceProfileElem);
-			sourceHolderElem.appendChild(metaElem);
-
-			quoteHolderElem.appendChild(quoteContentElem);
-			quoteHolderElem.appendChild(quoteIconElem);
-
-			itemInnerElem.appendChild(quoteHolderElem);
-			itemInnerElem.appendChild(sourceHolderElem);
-
-			itemElem.appendChild(itemInnerElem);
+			tempElem.innerHTML = `
+				<div class="item">
+					<div class="item-inner">
+						<div class="quote-holder">
+							<blockquote class="quote-content">${element["text"]}</blockquote>
+							<i class="fas fa-quote-left"></i>
+						</div>
+						<div class="source-holder">
+							<div class="source-profile">
+								<img src="${element["image"]}" alt="Picture of ${element["name"]}" />
+							</div>
+							<div class="meta">
+								<div class="name">${element["name"]}</div>
+								<div class="info">${element["role"]}</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			`;
 
 			// Append the element to the list
-			testimonialsElem.appendChild(itemElem);
+			testimonialsElem.appendChild(tempElem);
 		});
 
 		this.initCarousel();

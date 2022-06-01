@@ -1,25 +1,25 @@
 [
 	{
 		"name": "John Doe",
-		"picture": "https://www.homeandhelp.com/img/pages/32/a3a42e4e9d84f01cd08d0832682ab694.jpg",
+		"image": "https://www.homeandhelp.com/img/pages/32/a3a42e4e9d84f01cd08d0832682ab694.jpg",
 		"role": "CEO, Google",
 		"text": "Lorem Ipsum..."
 	},
 	{
 		"name": "Jane Doe",
-		"picture": "https://www.homeandhelp.com/img/pages/32/a3a42e4e9d84f01cd08d0832682ab694.jpg",
+		"image": "https://www.homeandhelp.com/img/pages/32/a3a42e4e9d84f01cd08d0832682ab694.jpg",
 		"role": "CTO, Uber",
 		"text": "Lorem Ipsum..."
 	},
 	{
 		"name": "John Doe",
-		"picture": "https://www.homeandhelp.com/img/pages/32/a3a42e4e9d84f01cd08d0832682ab694.jpg",
+		"image": "https://www.homeandhelp.com/img/pages/32/a3a42e4e9d84f01cd08d0832682ab694.jpg",
 		"role": "Director, Amazon",
 		"text": "Lorem Ipsum..."
 	},
 	{
 		"name": "Jane Doe",
-		"picture": "https://www.homeandhelp.com/img/pages/32/a3a42e4e9d84f01cd08d0832682ab694.jpg",
+		"image": "https://www.homeandhelp.com/img/pages/32/a3a42e4e9d84f01cd08d0832682ab694.jpg",
 		"role": "CEO, Facebook",
 		"text": "Lorem Ipsum..."
 	}

@@ -53,33 +53,8 @@ class ProjectDisplayer {
 		const projectsElem = document.getElementById("projects");
 
 		data.forEach(element => {
-			/*const isotopeItemElem = document.createElement("div");
-			isotopeItemElem.classList.add("isotope-item", "col-md-6", "mb-5");
-
-			const projectCardElem = document.createElement("div");
-			projectCardElem.classList.add("card", "project-card");
-
-			const rowElem = document.createElement("div");
-			rowElem.classList.add("row", "no-gutters");
-
-			const cardImgHolder = document.createElement("div");
-			cardImgHolder.classList.add("col-lg-4", "card-img-holder");
-
-			const projectImg = document.createElement("img");
-			projectImg.classList.add("card-img");
-			projectImg.src = element["image"];
-			projectImg.alt = `Project image of ${element["title"]}`;
-
-			const largeCol = document.createElement("div");
-			largeCol.classList.add("col-lg-8");
-
-			const cardBody = document.createElement("div");
-			cardBody.classList.add("card-body");
-
-			const cardHeader = document.createElement("h5");
-			cardHeader.classList.add("card-title");*/
-
-			const tempElem = document.createElement("project");
+			const tempElem = document.createElement("div");
+			tempElem.classList.add("project");
 
 			tempElem.innerHTML = `
 				<div class="isotope-item col-md-6 mb-5">
