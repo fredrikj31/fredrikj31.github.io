@@ -10,17 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Personal Portfolio - Fredrik Johansen">
 	<meta name="author" content="Fredrik Johansen">
-	
-	<!-- Favicons -->
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="apple-touch-icon" href="./assets/images/icons/ios/192.png">
-
-	<!-- PWA Manifest -->
-	<link rel="manifest" href="./manifest.json">
-
-	<!-- Colors -->
-	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#54b689">
-	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1e2a3a">
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -477,13 +467,6 @@
 	<script>
 		const main = new Main();
 		main.setCopyright();
-	</script>
-
-	<!-- Service Worker -->
-	<script>
-		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register("./sw.js");
-		}
 	</script>
 
 	<!-- Dark Mode -->
