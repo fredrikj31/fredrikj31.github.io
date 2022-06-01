@@ -1,0 +1,9 @@
+[
+	{
+		"title": "Lorem Ipsum Project",
+		"description": "Long description here... A lot of text here, where it all can fit in",
+		"footer": "Client: Google",
+		"image": "./assets/images/project/project-1.jpg",
+		"link": "./projects/HighSchool-Subjects-And-Electives-Picker.html"
+	}
+]
