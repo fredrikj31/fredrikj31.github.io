@@ -4,23 +4,5 @@
 		"image": "https://media-exp2.licdn.com/dms/image/C4E03AQE8_0f92pQCEw/profile-displayphoto-shrink_200_200/0/1596472637809?e=1661990400&v=beta&t=NvQGyNyNgC0A4jTlGjmgajBfd9imqWS0_6Q5WTXj8ak",
 		"role": "Teacher, H.C. Ørsted Gymnasiet",
 		"text": "Fredrik is outgoing, loyal, enterprising, works purposefully and wants to be an excellent developer and project manager."
-	},
-	{
-		"name": "Jane Doe",
-		"image": "https://www.homeandhelp.com/img/pages/32/a3a42e4e9d84f01cd08d0832682ab694.jpg",
-		"role": "CTO, Uber",
-		"text": "Lorem Ipsum..."
-	},
-	{
-		"name": "John Doe",
-		"image": "https://www.homeandhelp.com/img/pages/32/a3a42e4e9d84f01cd08d0832682ab694.jpg",
-		"role": "Director, Amazon",
-		"text": "Lorem Ipsum..."
-	},
-	{
-		"name": "Jane Doe",
-		"image": "https://www.homeandhelp.com/img/pages/32/a3a42e4e9d84f01cd08d0832682ab694.jpg",
-		"role": "CEO, Facebook",
-		"text": "Lorem Ipsum..."
 	}
 ]
