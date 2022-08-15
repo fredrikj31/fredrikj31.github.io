@@ -84,10 +84,10 @@
 		<section class="cta-section theme-bg-light py-5">
 			<div class="container text-center single-col-max-width">
 				<h2 class="heading mb-3">Online Resume</h2>
-				<a class="btn btn-primary mr-3"
+				<a class="btn btn-primary mr-3" onclick="downloadPortfolio('English')"
 					href="./assets/files/Fredrik Johansen - Resume (English).pdf" download
 					rel="noreferrer"><i class="fas fa-file-pdf mr-2"></i>Download PDF Version (English)</a>
-				<a class="btn btn-primary"
+				<a class="btn btn-primary" onclick="downloadPortfolio('Danish')"
 					href="./assets/files/Fredrik Johansen - Resume (Danish).pdf" download
 					rel="noreferrer"><i class="fas fa-file-pdf mr-2"></i>Download PDF Version (Danish)</a>
 			</div>
@@ -372,6 +372,9 @@
 		const main = new Main();
 		main.setCopyright();
 	</script>
+
+	<!-- Portfolio Event -->
+	<script src="./assets/js/download-portfolio.js"></script>
 
 	<!-- Javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
